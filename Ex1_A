@@ -1,0 +1,34 @@
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+
+
+namespace Ex1_A
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Créer une liste 
+            List<string> langages = new List<string>();
+
+            // Ajouter des éléments à la liste 
+            langages.Add("JavaScript");
+            langages.Add("Python");
+            langages.Add("Java ");
+            langages.Add("PHP");
+            langages.Add("C#");
+            langages.Add("C++");
+            langages.Add("Ruby");
+            langages.Add("CSS");
+            langages.Add("TypeScript");
+            langages.Add("C");           
+
+            //transformer une liste en chaîne de caractères
+            string str = string.Join(", ", langages);
+
+            Console.WriteLine(str);
+        }
+    }
+}
