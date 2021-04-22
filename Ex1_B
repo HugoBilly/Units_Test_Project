@@ -1,0 +1,19 @@
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace Ex1_B
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            IEnumerable<int> laQueue = Enumerable.Range(1, 10);
+            foreach (int elem in laQueue)
+                Console.WriteLine(elem);
+            double moyenne = laQueue.Average();
+            Console.WriteLine("La moyenne de la liste:  {0}", moyenne);
+        }
+    }
+}
