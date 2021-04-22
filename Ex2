@@ -1,0 +1,24 @@
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+
+
+namespace Ex2
+{
+    class Program
+    {
+        public static bool IsLeapYear(int Year) 
+        {
+            return (((Year & 3) == 0) && ((Year % 100 != 0) || (Year % 400 == 0)));
+        }  
+ 
+        static void Main(string[] args)
+        {
+            for(int I=1999;I<=2021;I++) 
+            {
+                if(IsLeapYear(I)) Console.WriteLine(I+" est une année bissextile");
+            }  
+        }
+    }
+}
